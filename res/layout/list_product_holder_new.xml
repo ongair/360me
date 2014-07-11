@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_product_shape"
+    android:layout_margin="5dp" >
+
+    <com.app.chasebank.bitmap.util.RecyclingImageView
+        android:id="@+id/list_company_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="16dp"
+        android:maxHeight="96dp"
+        android:src="@drawable/chase_256" />
+
+</LinearLayout>

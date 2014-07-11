@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/list_holder_selection"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/list_branch_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:hint="Machakos Branch"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/login_btn_text"
+        android:textSize="17sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/list_branch_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="left"
+        android:hint="ChaseBank"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/login_btn_text"
+        android:textSize="12sp" >
+    </TextView>
+
+</LinearLayout>

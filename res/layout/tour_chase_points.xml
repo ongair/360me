@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_patttern_4" >
+
+    <ImageView
+        android:id="@+id/app_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/image_for_splash_screen"
+        android:src="@drawable/chase_640" />
+
+    <LinearLayout
+        android:id="@+id/chase_tour_linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/app_chasepoints_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="source-sans-pro"
+            android:text="@string/chase_points"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/login_btn_text"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/line_view" />
+
+        <TextView
+            android:id="@+id/app_chasepoints_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="source-sans-pro"
+            android:gravity="center_horizontal"
+            android:text="@string/tour_chase_text"
+            android:textColor="@color/login_btn_text" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_holder_selection"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="@dimen/activity_list_vertical_margin"
+    android:paddingLeft="@dimen/activity_list_horizontal_margin"
+    android:paddingRight="@dimen/activity_list_horizontal_margin"
+    android:paddingTop="@dimen/activity_list_vertical_margin" >
+
+    <QuickContactBadge
+        android:id="@android:id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/image_shape"
+        android:contentDescription="@string/contact_icon"
+        android:scaleType="centerCrop"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:src="@drawable/contact_holder" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@android:id/icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="source-sans-pro"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/jane_doe" />
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="source-sans-pro"
+            android:text="@string/_254_712_270_408"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/app_contacts_holder_text" />
+
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/contact_icon_flag"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:contentDescription="@string/contact_flag"
+            android:src="@drawable/list_icon_flag" />
+
+        <ImageView
+            android:id="@+id/contact_icon_watch"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:contentDescription="@string/contact_watchlist"
+            android:src="@drawable/list_icon_watch" />
+
+        <ImageView
+            android:id="@+id/contact_icon_more"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/contact_more"
+            android:src="@drawable/list_icon_more" />
+    </LinearLayout>
+
+</RelativeLayout>

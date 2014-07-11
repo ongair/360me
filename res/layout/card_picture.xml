@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_holder_selection"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingBottom="@dimen/activity_list_vertical_margin"
+    android:paddingLeft="@dimen/activity_list_horizontal_margin"
+    android:paddingRight="@dimen/activity_list_horizontal_margin"
+    android:paddingTop="@dimen/activity_list_vertical_margin" >
+
+    <ImageView
+        android:id="@+id/product_photo"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:background="@drawable/image_shape"
+        android:baselineAlignBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/contact_holder" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/product_photo"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="source-sans-pro" />
+
+        <TextView
+            android:id="@+id/product_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/contact_name"
+            android:layout_below="@+id/contact_name"
+            android:layout_marginTop="3dp"
+            android:fontFamily="source-sans-pro"
+            android:textColor="@color/app_contacts_holder_text" />
+    </LinearLayout>
+
+</RelativeLayout>

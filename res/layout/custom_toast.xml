@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toast_layout"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/act_btn_login"
+    android:padding="2dp"
+    android:orientation="vertical" >
+    
+	<TextView
+	    android:id="@+id/toast_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:text="@string/add_lead_desc_text"
+	    android:textColor="@color/app_white" />
+    
+</LinearLayout>

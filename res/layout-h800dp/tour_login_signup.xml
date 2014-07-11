@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_patttern_4"
+    tools:context=".LoginFragment" >
+
+    <ImageView
+        android:id="@+id/app_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/image_for_splash_screen"
+        android:src="@drawable/chase_640" />
+
+    <LinearLayout
+        android:id="@+id/linearLinear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_icons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/login_icon_holder_128px" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:weightSum="100" >
+
+            <ImageView
+                android:id="@+id/login_move_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:src="@drawable/login_mov_left" />
+
+            <LinearLayout
+                android:id="@+id/linear_login_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="80"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/app_loginsp_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="source-sans-pro"
+                    android:gravity="center_horizontal"
+                    android:text="@string/login_sign_up"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#1682af"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/app_loginsp_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tour_login_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/login_btn_text" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/login_move_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:src="@drawable/login_mov_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginRight="-16dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/linear_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:padding="5dp"
+                android:src="@drawable/login_icon_g_plus" />
+
+            <TextView
+                android:id="@+id/login_button"
+                android:clickable="true"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/act_btn_login"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="0dp"
+                android:text="LOGIN"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

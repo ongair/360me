@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background">#bcbec0</color>
+    <color name="app_white">#d9dbdc</color>
+    <color name="app_pure_white">#ffffff</color>
+    
+    <color name="app_login_background">#dcddde</color>
+    <color name="app_login_text">#6d6f71</color>
+    
+    <color name="app_contacts_holder_background">#f6f6f6</color>
+    <color name="app_contacts_holder_text">#97999b</color>
+    <color name="app_contacts_selector">#fd4242</color>
+    
+    <color name="app_summary_bottom_back">#e3e4e5</color>
+    <color name="app_summary_bottom_text">#808285</color>
+    <color name="app_lead_selector">#fcfeff</color>
+    
+    <color name="app_lead_image_back">#e7e8e9</color>
+    
+    <color name="holo_blue">#FF33B5E5</color>
+    <color name="act_logged_in_background">#cacbcc</color>
+    <color name="act_logged_text">#dcddde</color>
+    <color name="act_view">#adaeb1</color>
+    <color name="act_text">#bcbec0</color>
+    <color name="act_log_buttons_lay">#f6f6f7</color>
+    <color name="act_buttons">#d5d7d8</color>
+    
+    <color name="list_company_background">#f2f2f3</color>
+    <color name="list_company_text">#808285</color>
+    <color name="list_company_name">#a7a9ac</color>
+    
+    <color name="golden">#f2a400</color>
+    <color name="red">#e00707</color>
+    <color name="green">#4ac925</color>
+    <color name="skyblue">#00d5f2</color>
+    <color name="holoblue">#ff33b6ea</color>
+    
+    <color name="login_btn">#df7554</color>
+    <color name="login_btn_text">#1682af</color>
+    <color name="login_btn_background">#c84624</color>
+    <color name="login_btn_selected">#a53c20</color>
+    
+    <color name="notification_selected">#1a4896</color>
+    <color name="contact_list_text">#231f20</color>
+    
+    <color name="product_btn">#1a4896</color>
+    <color name="product_btn_selected">#546c96</color>
+    
+    <color name="tab_lead">#5d6260</color>
+    <color name="tab_closed">#c11f41</color>
+    <color name="tab_pending">#1a4896</color>
+    <color name="tab_stalled">#a8aaad</color>
+    
+    <color name="tab_lead_selected">#3b3d3c</color>
+    <color name="tab_closed_selected">#81142b</color>
+    <color name="tab_pending_selected">#546c96</color>
+    <color name="tab_stalled_selected">#72777e</color>
+    
+    
+    
+</resources>

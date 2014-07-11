@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/please_counter_check_the_information_you_are_about_to_submit"
+                android:textColor="@color/login_btn_text" />
+
+            <ListView
+                android:id="@+id/adddet_list"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:listSelector="@drawable/list_holder_selection"
+                tools:listitem="@layout/list_holder_contacts" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adddet_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/add_lead_desc_text"
+                android:textColor="@color/login_btn_text" />
+
+            <EditText
+                android:id="@+id/adddet_additional_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/panel_white_shape"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="@string/additional_details_or_comments"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:padding="5dp"
+                android:textColor="@color/login_btn_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_lead_btn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/act_btn_login"
+            android:paddingBottom="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="0dp"
+            android:text="@string/add_lead"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/app_pure_white"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fcfcfc"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lead_section_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:background="@drawable/lead_nav_selector"
+                android:clickable="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/icon_notification_32"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/notification"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/login_btn_text"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#c8cacc" />
+
+            <TextView
+                android:id="@+id/lead_section_add_lead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:background="@drawable/lead_nav_selector"
+                android:clickable="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/icon_addleads_32_selected"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/add_lead"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/notification_selected"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#c8cacc" />
+
+            <TextView
+                android:id="@+id/lead_section_my_leads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:background="@drawable/lead_nav_selector"
+                android:clickable="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/icon_myleads_32"
+                android:focusable="true"
+                android:gravity="center_horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="@string/my_leads"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/login_btn_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_background"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/act_log_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/logged_in"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#5d6260"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/View01"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_log_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/line_view" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/logged_in_shape"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/act_log_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/icon_flag_32" />
+
+        <ImageView
+            android:id="@+id/view1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_log_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/line_view" />
+
+        <TextView
+            android:id="@+id/act_log_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/login_successful_dialog"
+            android:textColor="@color/login_btn_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_log_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/act_log_chase_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/btn_dialog_products"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/group_products"
+                android:textColor="@color/app_pure_white" />
+
+            <TextView
+                android:id="@+id/act_log_submit_lead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/btn_dialog_lead"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/submit_lead"
+                android:textColor="@color/app_pure_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

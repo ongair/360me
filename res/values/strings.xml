@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chase360</string>
+    <string name="app_lead_name">Lead</string>
+    
+    <!-- Menu -->
+    <string name="action_logout">Logout</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="image_for_splash_screen">Image for Splash Screen</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password_">Password:</string>
+    <string name="password">Password</string>
+    <string name="google_apps_username_and_password">Google Apps username and password</string>
+    <string name="login_using_your_chase_group">Login using your Chase Group</string>
+    <string name="username_">Username:</string>
+    <string name="search_contact">Search Contact</string>
+    <string name="jane_doe">Jane Doe</string>
+    <string name="_254_712_270_408">+254 712 270 408</string>
+    <string name="contact_icon">Contact Icon</string>
+    <string name="contact_flag">Contact Flag</string>
+    <string name="contact_watchlist">Contact Watchlist</string>
+    <string name="contact_more">Contact More</string>
+    <string name="please_counter_check_the_information_you_are_about_to_submit">Please counter check the information you are about to submit</string>
+    <string name="add_lead">ADD LEAD</string>
+    <string name="add_lead_desc_text">Please provide the following additional details.</string>
+    <string name="additional_details_or_comments">Additional details or comments...</string>
+    <string name="skip_intro">Skip Intro</string>
+    <string name="application_icon">Application Icon</string>
+    <string name="chase_points">Chase Points</string>
+    <string name="tour_login_text">"Welcome to the Chase 360 mobile application. In order to access this application, you need to sign in to your Google Apps account"</string>
+    <string name="tour_chase_text">"Chase Points are our unique way of rewarding the most active lead generators and relationship officers who close the most leads. You can earn valuable chase points for using this application to learn more about the group products.
+			\nChase Points can be redeemed for exciting rewards such as movie tickets"</string>
+    <string name="login_sign_up">Login / Sign Up</string>
+    <string name="you_have_300_chase_points">You have 300 chase points</string>
+    <string name="redeem">REDEEM</string>
+
+    <string-array name="tabs">
+        <item>"Leads \nSubmitted"</item>
+        <item>"Leads \nClosed"</item>
+        <item>"Leads \nPending"</item>
+        <item>"Leads \nStalled"</item>
+    </string-array>
+        <string name="my_leads">MY LEADS</string>
+        <string name="notification">NOTIFICATIONS</string>
+        <string name="call_now">CALL NOW</string>
+        <string name="add_reminder">ADD REMINDER</string>
+        <string name="notes">NOTES</string>
+        <string name="you_have_a_reminder_set_for_2rd_may_at_15_00_hrs_">You have a reminder set for 2rd May at 15:00 hrs.</string>
+        <string name="texts">Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text</string>
+	
+        <string name="plus_example_deep_link_id">/+/mobile/android/</string>
+    <string name="plus_example_deep_link_url">
+        https://developers.google.com/+/mobile/android/
+    </string>
+    
+    <string name="plus_generic_error">Sign in with Google is not available.</string>
+    <string name="progress_message">Signing in to Google&#8230;</string>
+    
+    <string name="revoke_access_status">Revoked access.</string>
+    <string name="revoke_access_error_status">Unable to revoke access.</string>
+    
+    <string name="default_status"/>
+    <string name="greeting_status">Welcome, %s.</string>
+    <string name="greeting_status_sign_in_required">Sign-in required</string>
+    <string name="greeting_status_error">Error signing in: %s.</string>
+    <string name="loading_status">Loading…</string>
+    <string name="signing_in_status">Signing in with Google+.</string>
+    <string name="signed_in_status">Signed in as \"%s\".</string>
+
+    <!-- Used if there was an error loading the signed in user's name. -->
+    <string name="unknown_person">Unknown</string>
+    <string name="signed_out_status">Signed out.</string>
+    <string name="revoke_access_status">Revoked access.</string>
+    <string name="revoke_access_error_status">Unable to revoke access.</string>
+    
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    
+    <string name="logged_in">Logged In</string>
+    
+    <string name="login_successful_dialog">Looks like It is your first time here. 
+        \nGet started on any of the options below and  
+        be on your way to earning Chase Points 
+        \n\nChoose an Option below.</string>
+    
+    <string name="group_products">Group Products</string>
+    
+    <string name="submit_lead">Submit a Lead</string>
+    
+    <string name="submit_another_lead">Submit another Lead</string>
+    
+    <string name="hint_company">Lorem Ipsum is simply dummy text of the printing and typesetting industry. \nLorem Ipsum has been the industry&amp;apos;s standard dummy text ever since the 1500s.</string>
+    
+    <string name="product_name">Product Name</string>
+    
+    <string name="app_chasepoints_ok_got_it">Ok got It</string>
+    
+    <string name="log_in">LOG IN</string>
+    
+    <string name="swipe_left">swipe left for more products</string>
+    
+    <string name="app_tag_line">Everyone knows someone</string>
+    
+    <string name="select">SELECT</string>
+    
+    <string name="chase_360">Chase 360</string>
+    
+    <string name="dialog_thanks">Thank you, your lead\n has been submitted</string>
+    <string name="company_prompt">Select Company</string>
+    <string name="close_lead">Close this lead</string>
+	
+</resources>

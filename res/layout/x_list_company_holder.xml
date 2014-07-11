@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/logged_in_shape"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <com.app.chasebank.bitmap.util.RecyclingImageView
+        android:id="@+id/list_company_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/products" />
+
+    <TextView
+        android:id="@+id/list_company_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_company_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/product_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/login_btn_text" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="220dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/list_company_product_name"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#d1d2d4" />
+
+    <ScrollView
+        android:id="@+id/lin_description"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/list_company_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="@string/hint_company"
+                android:textColor="@color/login_btn_text" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/swipe_btn_selected"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lin_description"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/act_btn_login"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="2dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/select"
+        android:textColor="@color/app_pure_white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

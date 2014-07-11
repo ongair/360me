@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.chasebank"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <!-- In order to receive push notifications -->
+    <permission
+        android:name="com.app.chasebank.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <!-- Permission for the push notitifications -->
+    <uses-permission android:name="com.app.chasebank.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Needed for push notifications that contain VIBRATE flag. Optional, but recommended. -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- So that we can get the account name -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Used to request data from the Google+ APIs in the SignInActivity -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required if we need to invalidate access tokens -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/StyledIndicators" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="MainActivity"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:label="@string/app_name"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.chasebank.LoginFragment"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:windowSoftInputMode="adjustResize" >
+
+            <!--
+                 Add intent-filter for search intent action and specify searchable configuration
+                 via meta-data tag. This allows this activity to receive search intents via the
+                 system hooks. In this sample this is only used on older OS versions (pre-Honeycomb)
+                 via the activity search dialog. See the Search API guide for more information:
+                 http://developer.android.com/guide/topics/search/search-dialog.html
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_contacts" />
+        </activity>
+
+        <receiver
+            android:name=".auth.GetNameInBackground$CallbackReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.app.chasebank.auth.Callback" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="LeadSummaryActivity"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:label="@string/app_name"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="LeadActivity"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:label="@string/app_lead_name" >
+        </activity>
+
+        <!-- Internal receivers and a service -->
+        <service android:name="com.infobip.push.lib.InfobipPushService" />
+
+        <receiver android:name="com.infobip.push.lib.InternalReceiver" />
+        <receiver
+            android:name="com.infobip.push.lib.InfobipPushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.app.chasebank" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Receiving notifications -->
+        <receiver
+            android:name=".push.ChasePushReceiver"
+            android:permission="com.app.chasebank.permission.C2D_MESSAGE" >
+            <intent-filter>
+                <action android:name="com.infobip.push.intent.REGISTERED_FOR_NOTIFICATIONS" />
+                <action android:name="com.infobip.push.intent.REGISTRATION_REFRESHED" />
+                <action android:name="com.infobip.push.intent.UNREGISTERED_FROM_NOTIFICATIONS" />
+                <action android:name="com.infobip.push.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="com.infobip.push.intent.NOTIFICATION_OPENED" />
+                <action android:name="com.infobip.push.intent.ERROR" />
+
+                <category android:name="com.app.chasebank" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Company Fragment Activity -->
+        <activity
+            android:name="CompanyAct"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:label="@string/app_lead_name" >
+        </activity>
+
+        <!-- Product Fragment Activity -->
+        <activity
+            android:name="ProductAct"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:label="@string/app_lead_name" >
+        </activity>
+
+        <!-- Product Fragment Activity -->
+        <activity
+            android:name="Branch"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:label="@string/app_lead_name" >
+        </activity>
+
+        <!-- MyLead Summary Activity -->
+        <activity
+            android:name="MyLeadSummaryActivity"
+            android:configChanges="touchscreen|keyboardHidden|screenLayout|orientation|navigation"
+            android:label="@string/app_lead_name" >
+        </activity>
+
+        <service android:name=".util.DownloadService" >
+        </service>
+    </application>
+
+</manifest>
